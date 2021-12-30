@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1f1d36;
+  display: grid;
+  place-content: center;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+}
+
+.item {
+  background: rgba(249, 21, 21, 0.2);
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2em;
+  border-radius: 2em;
+  margin: 1em 0 0 0;
+}
+
+.card {
+  background-color: chocolate;
+  padding: 2em;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 0.5em;
+  width: 20em;
+  height: auto;
+  border-radius: 2em;
+  opacity: 0.33;
+  transition: all 300ms ease-in-out;
+}
+
+.item > .card:hover {
+  opacity: 1;
+}
+
+.cart {
+  background: rgba(249, 21, 21, 0.2);
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2em;
+  border-radius: 2em;
+  margin: 1em 0 1em 0;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.cart > .card:hover {
+  opacity: 1;
+}
+
+button {
+  background-color: coral;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 1.5em;
+  color: blanchedalmond;
+  border-radius: 2em;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card > .itemId {
+  display: none;
+}
